@@ -1,0 +1,11 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-alias: spring
+    key-store: src/main/resources/saml/keystore.jks
+    key-store-password: secret
+
+security:
+  saml2:
+      metadata-url: https://raw.githubusercontent.com/rahulBarahpuria/LearningSpringBoot/master/SAMLTestApp.xml
